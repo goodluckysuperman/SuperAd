@@ -1,0 +1,45 @@
+item_id: int64
+item_feature: list<element: struct<feature_id: int64, feature_value_type: string, float_value: null, int_array: li (... 39 chars omitted)
+  child 0, element: struct<feature_id: int64, feature_value_type: string, float_value: null, int_array: list<element: in (... 24 chars omitted)
+      child 0, feature_id: int64
+      child 1, feature_value_type: string
+      child 2, float_value: null
+      child 3, int_array: list<element: int64>
+          child 0, element: int64
+      child 4, int_value: double
+label: list<element: struct<action_time: int64, action_type: int64>>
+  child 0, element: struct<action_time: int64, action_type: int64>
+      child 0, action_time: int64
+      child 1, action_type: int64
+seq_feature: struct<action_seq: list<element: struct<feature_id: int64, feature_value_type: string, int_array: li (... 250 chars omitted)
+  child 0, action_seq: list<element: struct<feature_id: int64, feature_value_type: string, int_array: list<element: int64>> (... 1 chars omitted)
+      child 0, element: struct<feature_id: int64, feature_value_type: string, int_array: list<element: int64>>
+          child 0, feature_id: int64
+          child 1, feature_value_type: string
+          child 2, int_array: list<element: int64>
+              child 0, element: int64
+  child 1, content_seq: list<element: struct<feature_id: int64, feature_value_type: string, int_array: list<element: int64>> (... 1 chars omitted)
+      child 0, element: struct<feature_id: int64, feature_value_type: string, int_array: list<element: int64>>
+          child 0, feature_id: int64
+          child 1, feature_value_type: string
+          child 2, int_array: list<element: int64>
+              child 0, element: int64
+  child 2, item_seq: list<element: struct<feature_id: int64, feature_value_type: string, int_array: list<element: int64>> (... 1 chars omitted)
+      child 0, element: struct<feature_id: int64, feature_value_type: string, int_array: list<element: int64>>
+          child 0, feature_id: int64
+          child 1, feature_value_type: string
+          child 2, int_array: list<element: int64>
+              child 0, element: int64
+timestamp: int64
+user_feature: list<element: struct<feature_id: int64, feature_value_type: string, float_array: list<element: doubl (... 56 chars omitted)
+  child 0, element: struct<feature_id: int64, feature_value_type: string, float_array: list<element: double>, int_array: (... 41 chars omitted)
+      child 0, feature_id: int64
+      child 1, feature_value_type: string
+      child 2, float_array: list<element: double>
+          child 0, element: double
+      child 3, int_array: list<element: int64>
+          child 0, element: int64
+      child 4, int_value: double
+user_id: string
+-- schema metadata --
+pandas: '{"index_columns": [], "column_indexes": [], "columns": [{"name":' + 909

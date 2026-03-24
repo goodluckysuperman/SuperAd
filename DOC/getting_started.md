@@ -18,10 +18,13 @@
 - 项目目录：`D:\ProjectManage\KDDTAAC`
 - Conda 安装目录：`D:\Programming_tools\conda`
 - 虚拟环境名称：`kddtaac`
+- 统一执行方式：`conda run -n kddtaac --no-capture-output`
 - 示例数据目录：`D:\ProjectManage\KDDTAAC\DATA\data_sample_1000`
 - 依赖记录文件：`D:\ProjectManage\KDDTAAC\requirements.txt`
 
 后面如果安装新的 Python 依赖，应该同时更新 `requirements.txt`，保持环境可复现。
+仓库根目录下的 `AGENTS.md` 也记录了这条开发约定，后续协作时默认按这个规则执行。
+如果后面开始做 EDA、baseline 和建模，目录维护方式可以参考 `DOC/project_conventions.md`。
 
 ## 3. 你现在应该先学什么
 
@@ -154,22 +157,22 @@ EDA 就是探索性数据分析。你需要先回答这些问题：
 
 ## 8. 你现在最常用的命令
 
-打开 PowerShell 后：
+推荐直接使用显式命令，而不是依赖当前终端是否已经激活环境：
 
 ```powershell
-conda activate kddtaac
+conda run -n kddtaac --no-capture-output python --version
 ```
 
 检查 Python 版本：
 
 ```powershell
-python --version
+conda run -n kddtaac --no-capture-output python --version
 ```
 
 以后如果根据 `requirements.txt` 安装依赖：
 
 ```powershell
-pip install -r requirements.txt
+conda run -n kddtaac --no-capture-output pip install -r requirements.txt
 ```
 
 ## 9. 给新手的几个提醒

@@ -1,0 +1,9 @@
+{
+  "translation.source-language": "auto",
+  "translation.target-language": "zh-CN",
+  "translation.simple-display-mode": "notification",
+  "translation.max-history": 50,
+  "translation.translation-api-provider": "Microsoft",
+  "translation.voice-api-provider": "Microsoft",
+  "translation.auto-translate-hovering": true
+}

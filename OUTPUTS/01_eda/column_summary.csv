@@ -1,0 +1,8 @@
+column,pandas_dtype,null_count,non_null_count,sample_python_type
+item_id,int64,0,1000,int64
+item_feature,object,0,1000,ndarray
+label,object,0,1000,ndarray
+seq_feature,object,0,1000,dict
+timestamp,int64,0,1000,int64
+user_feature,object,0,1000,ndarray
+user_id,str,0,1000,str
